@@ -1,0 +1,21 @@
+# ignore models and large data
+models/
+data/
+*.pt
+*.pth
+*.h5
+*.tar.gz
+*.tar
+*.tgz
+*.zip
+
+
+# typical unwanted folders
+venv/
+__pycache__/
+.DS_Store
+
+
+# optional: ignore any local build artifacts
+build/
+dist/
