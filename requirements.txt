@@ -1,0 +1,11 @@
+pyserial
+numpy
+pandas
+scikit-learn
+tensorflow
+flask
+flask-cors
+matplotlib
+requests
+pykrige
+joblib

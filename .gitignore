@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+*.h5
+*.save
+*.zip
+node_modules/
