@@ -6,29 +6,18 @@
       "use": "@vercel/python"
     },
     {
-      "src": "deepair_frontend/index.html",
+      "src": "deepair_frontend/**",
       "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/$1.py"
-    },
-    {
-      "src": "/",
-      "dest": "/deepair_frontend/index.html"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/deepair_frontend/$1"
     }
   ],
   "rewrites": [
     {
-      "source": "/",
+      "source": "/api/(.*)",
+      "destination": "/api/$1.py"
+    },
+    {
+      "source": "/(.*)",
       "destination": "/deepair_frontend/index.html"
     }
   ]
 }
-
